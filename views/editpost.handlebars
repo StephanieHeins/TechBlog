@@ -1,19 +1,20 @@
         <div class="d-flex justify-content-center my-4">
-            <a href="#" class="link-secondary">Dashboard</a>
+            <h3>Edit Post</h3>
         </div>
         <div class="d-flex justify-content-center my-4">
-            <h3>Create Post</h3>
+            <h5>Created on {{format_date post.date_created}}</h5>
         </div>
         <div class="d-flex justify-content-center my-4">
             <form>
                 <div class="form-group">
                     <label for="postTitle">Title</label>
-                    <input type="text" class="form-control" id="postTitle" placeholder="Post Title">
+                    <input type="text" class="form-control" id="postTitle" value="Post {{post.title}}">
               </div>  
               <div class="form-group">
                 <label for="postContent">Content</label>
-                <input type="text" class="form-control" id="postContent" placeholder="Post Content">
+                <input type="text" class="form-control" id="postContent" rows="3" value="{{post.post_content}}">
               </div>
-                <button type="submit" class="btn btn-dark">Create!</button>
+                <button type="submit" class="btn btn-dark">Save</button>
+                <button type="button" class="btn btn-danger">Delete</button>
             </form>
         </div>
