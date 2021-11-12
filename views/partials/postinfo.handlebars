@@ -1,0 +1,20 @@
+<div class="container-fluid all-posts my-5">
+    <div class="row">
+      <div class="col-1"></div>
+      <div class="col">
+        <div class="card">
+          <div class="card-header">
+            <a href="./post/{{post.id}}">{{post.title}}</a>
+            <div style="text-align: right">Posted by {{user.username}} on {{format_date post.date_created}}</div>
+          </div>
+          <div class="card-body">
+            <p class="card-text">{{post.content}}</p>
+          </div>
+          <div class="card-body text-right">
+            <p class="card-text">{{comments.length}} comments</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-1"></div>
+    </div>
+</div>
