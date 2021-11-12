@@ -5,14 +5,14 @@
             <h5>Created on {{format_date post.date_created}}</h5>
         </div>
         <div class="d-flex justify-content-center my-4">
-            <form>
+            <form class="edit-post-form">
                 <div class="form-group">
                     <label for="postTitle">Title</label>
-                    <input type="text" class="form-control" id="postTitle" value="Post {{post.title}}">
+                    <input type="text" class="form-control" id="postTitle" name="postTitle" value="Post {{post.title}}">
               </div>  
               <div class="form-group">
                 <label for="postContent">Content</label>
-                <input type="text" class="form-control" id="postContent" rows="3" value="{{post.content}}">
+                <input type="text" class="form-control" id="postContent" name="postContent" rows="3" value="{{post.content}}">
               </div>
                 <button type="submit" class="btn btn-dark">Save</button>
                 <button type="button" class="btn btn-danger">Delete</button>
