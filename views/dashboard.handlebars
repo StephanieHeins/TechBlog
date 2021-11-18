@@ -6,6 +6,9 @@
     {{> postinfo post}}
 
         <div class="d-flex justify-content-center">
-            <button type="button" class="btn btn-info">Edit</button>
+            <a href="/editpost/{{post.id}}">
+            <button type="button" class="btn btn-info" id="editBtn">Edit</button>
+            </a>
+
         </div>
     {{/each}}
