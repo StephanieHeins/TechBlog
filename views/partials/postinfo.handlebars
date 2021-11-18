@@ -4,11 +4,11 @@
       <div class="col">
         <div class="card">
           <div class="card-header">
-            <a href="./post/{{post.id}}">{{post.title}}</a>
-            <div style="text-align: right">Posted by {{user.username}} on {{format_date post.date_created}}</div>
+            <a href="./post/{{id}}">{{title}}</a>
+            <div style="text-align: right">Posted by {{user.username}} on {{format_date date_created}}</div>
           </div>
           <div class="card-body">
-            <p class="card-text">{{post.content}}</p>
+            <p class="card-text">{{content}}</p>
           </div>
           <div class="card-body text-right">
             <p class="card-text">{{comments.length}} comments</p>
