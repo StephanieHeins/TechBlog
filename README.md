@@ -9,6 +9,7 @@ A blog app for topics related to tech. With this you can create an account, crea
 * [Technologies](#technologies)
 * [Usage](#usage)
 * [Screenshots](#screenshots)
+* [Licenses](#licenses)
 
 ## Links 
 
@@ -40,3 +41,6 @@ Startup
 ## Screenshots
 
 ![Homepage](techblogsc.png)
+
+## Licenses
+MIT
